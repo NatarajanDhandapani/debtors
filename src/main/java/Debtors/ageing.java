@@ -293,7 +293,7 @@ public class ageing {
 		rightAlignedbody.setFont(font);
 		Date start = new Date();
 		String ddmmyy = null;
-		String filepath = "D:/debtors/drs 2024-25/Nov 2024/";
+		String filepath = "D:/debtors/drs 2025-26/mar 2026/";
 		int days = 0;
 		int days1 = 0;
 		double uacbal = 0.00;
@@ -302,11 +302,11 @@ public class ageing {
 		int row = 5;
 		int col = 1;
 		DateTimeFormatter ft = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-		String reportdt = "30.11.2024";
+		String reportdt = "31.03.2026";
 		// Aging bucket conditions
-		int[][] bucket1 = { { 0, 30 }, { 31, 60 }, { 61, 90 }, { 91, 120 }, { 121, 150 }, { 151, 180 }, { 181, 3000 } };
-		int[][] bucket2 = { { -99, 0 }, { 1, 180 }, { 181, 360 }, { 361, 720 }, { 721, 1080 }, { 1081, 2000 },
-				{ 2001, 3000 } };
+		int[][] bucket1 = { { 0, 30 }, { 31, 60 }, { 61, 90 }, { 91, 120 }, { 121, 150 }, { 151, 180 }, { 181, 9999 } };
+		int[][] bucket2 = { { -99, 0 }, { 1, 180 }, { 181, 360 }, { 361, 720 }, { 721, 1080 }, { 1081, 2600 },
+				{ 2601, 9999 } };
 		String[][] buckethead = { { "<30 days", "Not due" }, { "31-60 days", "<Six Months" },
 				{ "61-90 days", "6m-12 month" }, { "91-120 days", "13-24 monrh" }, { "121-150 days", "25-36 monrh" },
 				{ "151-180 days", ">36 month" }, { ">181 days", ">61 months" } };
