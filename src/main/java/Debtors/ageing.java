@@ -1,6 +1,6 @@
 package Debtors;
 
-// last updated 03.10.26 @ 08.00 hrs
+// last updated 04.10.26 @ 05.45 hrs
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -292,7 +292,7 @@ public class ageing {
 		rightAlignedbody.setFont(font);
 		Date start = new Date();
 		String ddmmyy = null;
-		String filepath = "D:/debtors/drs 2026-27/Aug 2026/";
+		String filepath = "D:/debtors/drs 2026-27/sep 2026/";
 		int days = 0;
 		int days1 = 0;
 		double uacbal = 0.00;
@@ -301,7 +301,7 @@ public class ageing {
 		int row = 5;
 		int col = 1;
 		DateTimeFormatter ft = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-		String reportdt = "31.08.2026";
+		String reportdt = "30.09.2026";
 		// Aging bucket conditions
 		int[][] bucket1 = { { 0, 30 }, { 31, 60 }, { 61, 90 }, { 91, 120 }, { 121, 150 }, { 151, 180 }, { 181, 9999 } };
 		int[][] bucket2 = { { -99, 0 }, { 1, 180 }, { 181, 360 }, { 361, 720 }, { 721, 1080 }, { 1081, 2600 },
